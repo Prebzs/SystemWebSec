@@ -1,0 +1,16 @@
+| Step | printf-internal | printf-internal | Output    |
+|      | loop pointer    | stack pointer   | up to now |
+|------+-----------------+-----------------+-----------|
+|    0 | 0812ff02        | bffff544        | (empty)   |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
+|      |                 |                 |           |
