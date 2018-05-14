@@ -1,0 +1,32 @@
+| Step | printf-internal | printf-internal | Output      |
+|      | loop pointer    | stack pointer   | up to now   |
+|------+-----------------+-----------------+-------------|
+|    0 | 0812ff02        | bffff544        | (empty)     |
+|    1 | 0812ff03        | bffff544        |a            |
+|    2 | 0812ff04        | bffff544        |ab           |
+|    3 | 0812ff05        | bffff544        |abc          |
+|    4 | 0812ff06        | bffff544        |abc          |
+|    5 | 0812ff07        | bffff544        |abc          |
+|    6 | 0812ff07        | bffff545        |abc          |
+|    7 | 0812ff07        | bffff546        |abc          |
+|    8 | 0812ff07        | bffff547        |abc          |
+|    9 | 0812ff07        | bffff548        |abc66        |
+|    10| 0812ff08        | bffff548        |abc66x       |
+|    11| 0812ff09        | bffff548        |abc66xy      |
+|    12| 0812ff0a        | bffff548        |abc66xy      |
+|    13| 0812ff0b        | bffff548        |abc66xy      |
+|    14| 0812ff0b        | bffff549        |abc66xy      |
+|    15| 0812ff0b        | bffff54a        |abc66xy      |
+|    16| 0812ff0b        | bffff54b        |abc66xy      |
+|    17| 0812ff0b        | bffff54c        |abc66xy      |
+|    18| 0812ff0b        | bffff580        |abc66xy      |
+|    19| 0812ff0b        | bffff581        |abc66xyF     |
+|    20| 0812ff0b        | bffff582        |abc66xyFo    |
+|    21| 0812ff0b        | bffff583        |abc66xyFoo   |
+|    22| 0812ff0b        | bffff584        |abc66xyFooB  |
+|    23| 0812ff0b        | bffff585        |abc66xyFooBa |
+|    24| 0812ff0b        | bffff586        |abc66xyFooBar|
+|    25| 0812ff0c        | bffff54c        |abc66xyFooBar|
+
+
+format string: abc%dxy%s\0
